@@ -5,12 +5,12 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
     <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_PasswordManager.exe" Value="..\GUI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_PasswordManager.exe.config" Value="..\GUI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_osef.exe" Value="..\Pwd Manager\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_osef.exe.config" Value="..\Pwd Manager\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_osef.exe.config_1" Value="..\Pwd Manager\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_osef.exe_1" Value="..\Pwd Manager\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_PasswordManager.exe" Value="..\GUI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_PasswordManager.exe.config" Value="..\GUI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_osef.exe" Value="..\Pwd Manager\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_osef.exe.config" Value="..\Pwd Manager\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_osef.exe.config_1" Value="..\Pwd Manager\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_osef.exe_1" Value="..\Pwd Manager\bin\Debug"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_PasswordManager.exe" Value="Password Manager.exe"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_PasswordManager.exe.config" Value="Password Manager.exe.config"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_osef.exe" Value="osef.exe"/>

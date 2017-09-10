@@ -24,6 +24,7 @@ namespace GUI
                     PwdButton.Enabled = false;
                     domainDelete.Enabled = false;
                     deletePwd.Enabled = false;
+                    ModifyButton.Enabled = false;
                 }
             }
         }
@@ -35,6 +36,7 @@ namespace GUI
             domainDelete.Enabled = false;
             deletePwd.Enabled = false;
             PwdButton.Enabled = false;
+            ModifyButton.Enabled = false;
             _listDomain = new List<Domain>();
         }
 
@@ -120,7 +122,11 @@ namespace GUI
                         ClearTextBoxes();
                         NotSaved = true;
 
-                        if (element.ListUser.Count == 0) deletePwd.Enabled = false;
+                        if (element.ListUser.Count == 0)
+                        {
+                            deletePwd.Enabled = false;
+                            ModifyButton.Enabled = false;
+                        }
                     }
                 }
             }
@@ -136,6 +142,7 @@ namespace GUI
 
                 nicknameTextBox.Text = TabWords[0];
                 passwordTextBox.Text = TabWords[1];
+                ModifyButton.Enabled = true;
             }
         }
 
@@ -206,6 +213,7 @@ namespace GUI
             PwdButton.Enabled = false;
             deletePwd.Enabled = false;
             domainDelete.Enabled = false;
+            ModifyButton.Enabled = false;
         }
 
         private void AboutButton_Click(object sender, EventArgs e)
@@ -236,7 +244,7 @@ namespace GUI
             if (NotSaved == true)
             {
                 MessageBoxButtons b = MessageBoxButtons.YesNo;
-                DialogResult r = MessageBox.Show("Des modifications n'ont pas été sauvegardée, continuer?", "Attention !", b, MessageBoxIcon.Warning);
+                DialogResult r = MessageBox.Show("Des modifications n'ont pas été sauvegardée, quitter quand même?", "Attention !", b, MessageBoxIcon.Warning);
                 if (r == DialogResult.No)
                     e.Cancel = true;
             }
