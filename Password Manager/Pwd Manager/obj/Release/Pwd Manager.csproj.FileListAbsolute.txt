@@ -1,0 +1,12 @@
+B:\CHashtag\Password Manager\Pwd Manager\bin\Release\osef.exe.config
+B:\CHashtag\Password Manager\Pwd Manager\bin\Release\osef.exe
+B:\CHashtag\Password Manager\Pwd Manager\bin\Release\osef.pdb
+B:\CHashtag\Password Manager\Pwd Manager\obj\Release\osef.exe
+B:\CHashtag\Password Manager\Pwd Manager\obj\Release\osef.pdb
+B:\CHashtag\Password Manager\Pwd Manager\obj\Release\Pwd Manager.csprojResolveAssemblyReference.cache
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\Pwd Manager\bin\Release\osef.exe.config
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\Pwd Manager\bin\Release\osef.exe
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\Pwd Manager\bin\Release\osef.pdb
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\Pwd Manager\obj\Release\Pwd Manager.csprojResolveAssemblyReference.cache
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\Pwd Manager\obj\Release\osef.exe
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\Pwd Manager\obj\Release\osef.pdb

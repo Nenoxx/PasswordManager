@@ -1,0 +1,37 @@
+B:\CHashtag\Password Manager\GUI\bin\Release\Password Manager.exe.config
+B:\CHashtag\Password Manager\GUI\bin\Release\Password Manager.exe.manifest
+B:\CHashtag\Password Manager\GUI\bin\Release\Password Manager.application
+B:\CHashtag\Password Manager\GUI\bin\Release\Password Manager.exe
+B:\CHashtag\Password Manager\GUI\bin\Release\Password Manager.pdb
+B:\CHashtag\Password Manager\GUI\bin\Release\osef.exe
+B:\CHashtag\Password Manager\GUI\bin\Release\osef.pdb
+B:\CHashtag\Password Manager\GUI\obj\Release\GUI.csprojResolveAssemblyReference.cache
+B:\CHashtag\Password Manager\GUI\obj\Release\GUI.domainPopup.resources
+B:\CHashtag\Password Manager\GUI\obj\Release\GUI.Form1.resources
+B:\CHashtag\Password Manager\GUI\obj\Release\GUI.passwordPopup.resources
+B:\CHashtag\Password Manager\GUI\obj\Release\GUI.Properties.Resources.resources
+B:\CHashtag\Password Manager\GUI\obj\Release\GUI.csproj.GenerateResource.Cache
+B:\CHashtag\Password Manager\GUI\obj\Release\Password Manager.exe.manifest
+B:\CHashtag\Password Manager\GUI\obj\Release\Password Manager.application
+B:\CHashtag\Password Manager\GUI\obj\Release\Password Manager.exe
+B:\CHashtag\Password Manager\GUI\obj\Release\Password Manager.pdb
+B:\CHashtag\Password Manager\GUI\obj\Release\GUI.AboutBox.resources
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\GUI\bin\Release\Password Manager.exe.config
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\GUI\bin\Release\Password Manager.exe.manifest
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\GUI\bin\Release\Password Manager.application
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\GUI\bin\Release\Password Manager.exe
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\GUI\bin\Release\Password Manager.pdb
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\GUI\bin\Release\osef.exe
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\GUI\bin\Release\osef.pdb
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\GUI\bin\Release\osef.exe.config
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\GUI\obj\Release\GUI.csprojResolveAssemblyReference.cache
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\GUI\obj\Release\GUI.AboutBox.resources
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\GUI\obj\Release\GUI.domainPopup.resources
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\GUI\obj\Release\GUI.Form1.resources
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\GUI\obj\Release\GUI.passwordPopup.resources
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\GUI\obj\Release\GUI.Properties.Resources.resources
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\GUI\obj\Release\GUI.csproj.GenerateResource.Cache
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\GUI\obj\Release\Password Manager.exe.manifest
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\GUI\obj\Release\Password Manager.application
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\GUI\obj\Release\Password Manager.exe
+C:\Users\Nenoxx\Documents\Visual Studio 2017\Projects\Password Manager\GUI\obj\Release\Password Manager.pdb

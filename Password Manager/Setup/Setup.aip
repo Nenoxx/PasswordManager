@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="14.2.1" version="14.2.1" Modules="simple" RootPath="." Language="en" Id="{01767CBA-8774-4454-9EEE-CB26FBAC4D03}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_PasswordManager.exe" Value="..\GUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_PasswordManager.exe.config" Value="..\GUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_osef.exe" Value="..\Pwd Manager\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_osef.exe.config" Value="..\Pwd Manager\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_osef.exe.config_1" Value="..\Pwd Manager\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_osef.exe_1" Value="..\Pwd Manager\bin\Release"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_PasswordManager.exe" Value="Password Manager.exe"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_PasswordManager.exe.config" Value="Password Manager.exe.config"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_osef.exe" Value="osef.exe"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_osef.exe.config" Value="osef.exe.config"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_osef.exe.config_1" Value="osef.exe.config"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_osef.exe_1" Value="osef.exe"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install Password Manager." ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="PW.exe" Type="8"/>
+    <ROW Property="Manufacturer" Value="Nenoxx Prod"/>
+    <ROW Property="ProductCode" Value="1033:{08F963E2-8834-4553-87ED-CB092000C119} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Password Manager"/>
+    <ROW Property="ProductVersion" Value="1.1.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{361D2D01-75E4-45A1-B4C8-CBD09104BC5E}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="GUI_Dir" Directory_Parent="APPDIR" DefaultDir="GUI"/>
+    <ROW Directory="PwdManager_Dir" Directory_Parent="APPDIR" DefaultDir="PWDMAN~1|Pwd Manager"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="GUI_PrimaryOutput" ComponentId="{E86A8CFF-2521-4A06-9CA5-A9535ED8334F}" Directory_="GUI_Dir" Attributes="0" KeyPath="PasswordManager.exe"/>
+    <ROW Component="GUI_References" ComponentId="{CCEBC370-B77E-4DDF-B5AF-6190FD44F37A}" Directory_="GUI_Dir" Attributes="0" KeyPath="osef.exe"/>
+    <ROW Component="ProductInformation" ComponentId="{41105E3B-43D0-4529-9A1D-F032F8CA2B13}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="PwdManager_PrimaryOutput" ComponentId="{93B0829D-F458-4084-9028-C8F4F0248F9D}" Directory_="PwdManager_Dir" Attributes="0" KeyPath="osef.exe_1"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{AEA05801-B34C-4DAF-A24A-0593DFEAEE12}" Directory_="SHORTCUTDIR" Attributes="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="GUI_PrimaryOutput GUI_References ProductInformation PwdManager_PrimaryOutput SHORTCUTDIR"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="PasswordManager.exe" Component_="GUI_PrimaryOutput" FileName="PASSWO~2.EXE|[|AI_PROPPATH_FILENAME_PERBUILD_PasswordManager.exe]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_PasswordManager.exe&gt;" SelfReg="false" NextFile="PasswordManager.exe.config" DigSign="true"/>
+    <ROW File="PasswordManager.exe.config" Component_="GUI_PrimaryOutput" FileName="PASSWO~2.CON|[|AI_PROPPATH_FILENAME_PERBUILD_PasswordManager.exe.config]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_PasswordManager.exe.config&gt;" SelfReg="false" NextFile="osef.exe"/>
+    <ROW File="osef.exe" Component_="GUI_References" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_osef.exe]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_osef.exe&gt;" SelfReg="false" NextFile="osef.exe.config" DigSign="true"/>
+    <ROW File="osef.exe.config" Component_="GUI_References" FileName="OSEFEX~2.CON|[|AI_PROPPATH_FILENAME_PERBUILD_osef.exe.config]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_osef.exe.config&gt;" SelfReg="false" NextFile="osef.exe_1"/>
+    <ROW File="osef.exe.config_1" Component_="PwdManager_PrimaryOutput" FileName="OSEFEX~2.CON|[|AI_PROPPATH_FILENAME_PERBUILD_osef.exe.config_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_osef.exe.config_1&gt;" SelfReg="false"/>
+    <ROW File="osef.exe_1" Component_="PwdManager_PrimaryOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_osef.exe_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_osef.exe_1&gt;" SelfReg="false" NextFile="osef.exe.config_1" DigSign="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AppPathsComponent">
+    <ROW Name="AI_APPPATH_PERBUILD_PasswordManager.exe" Path="[|AI_PROPPATH_DIR_PERBUILD_PasswordManager.exe]\[|AI_PROPPATH_FILENAME_PERBUILD_PasswordManager.exe]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_PasswordManager.exe.config" Path="[|AI_PROPPATH_DIR_PERBUILD_PasswordManager.exe.config]\[|AI_PROPPATH_FILENAME_PERBUILD_PasswordManager.exe.config]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_osef.exe" Path="[|AI_PROPPATH_DIR_PERBUILD_osef.exe]\[|AI_PROPPATH_FILENAME_PERBUILD_osef.exe]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_osef.exe.config" Path="[|AI_PROPPATH_DIR_PERBUILD_osef.exe.config]\[|AI_PROPPATH_FILENAME_PERBUILD_osef.exe.config]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_osef.exe.config_1" Path="[|AI_PROPPATH_DIR_PERBUILD_osef.exe.config_1]\[|AI_PROPPATH_FILENAME_PERBUILD_osef.exe.config_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_osef.exe_1" Path="[|AI_PROPPATH_DIR_PERBUILD_osef.exe_1]\[|AI_PROPPATH_FILENAME_PERBUILD_osef.exe_1]" Type="2" Content="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="PW.exe" SourcePath="..\Ressources\PW.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT64 OR ((VersionNT &lt;&gt; 501) OR (ServicePackLevel = 3))) AND ((VersionNT &lt;&gt; 502) OR (ServicePackLevel = 2))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="PasswordManager" Directory_="SHORTCUTDIR" Name="PASSWO~1|Password Manager" Component_="GUI_PrimaryOutput" Target="[#PasswordManager.exe]" Hotkey="0" IconIndex="0" ShowCmd="1"/>
+    <ROW Shortcut="osef" Directory_="SHORTCUTDIR" Name="osef" Component_="PwdManager_PrimaryOutput" Target="[#osef.exe_1]" Hotkey="0" IconIndex="0" ShowCmd="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.VsProjectComponent">
+    <ROW ProjectId="{2ed8b2b1-dc0f-40ed-bed6-a039734818c9}" ProjectName="GUI" OutputGroup="PrimaryOutput" OutputFile="PasswordManager.exe" OutputFileShortcut="PasswordManager"/>
+    <ROW ProjectId="{2ed8b2b1-dc0f-40ed-bed6-a039734818c9}" ProjectName="GUI" OutputGroup="PrimaryOutput" OutputFile="PasswordManager.exe.config"/>
+    <ROW ProjectId="{2ed8b2b1-dc0f-40ed-bed6-a039734818c9}" ProjectName="GUI" OutputGroup="References" OutputFile="osef.exe"/>
+    <ROW ProjectId="{2ed8b2b1-dc0f-40ed-bed6-a039734818c9}" ProjectName="GUI" OutputGroup="References" OutputFile="osef.exe.config"/>
+    <ROW ProjectId="{afc04ccc-e489-4fac-8432-dcffe2cde44d}" ProjectName="Pwd Manager" OutputGroup="PrimaryOutput" OutputFile="osef.exe_1" OutputFileShortcut="osef"/>
+    <ROW ProjectId="{afc04ccc-e489-4fac-8432-dcffe2cde44d}" ProjectName="Pwd Manager" OutputGroup="PrimaryOutput" OutputFile="osef.exe.config_1"/>
+  </COMPONENT>
+</DOCUMENT>
